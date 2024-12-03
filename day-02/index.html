@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 02 - Framing names</title>
+  <link rel="stylesheet" href="../index.css">
+</head>
+
+<body>
+  <h1>Challenge #2 - Framing names 🖼️</h1>
+
+  <script>
+    function createFrame(names) {
+      // Encuentra la longitud del nombre más largo
+      const longestName = Math.max(...names.map(name => name.length))
+
+      // Crea la línea superior e inferior del marco
+      const frame = '*'.repeat(longestName + 4)
+
+      // Crea las líneas intermedias con nombres centrados
+      const framedNames = names.map(name => {
+        const padding = ' '.repeat(longestName - name.length)
+        return `* ${name}${padding} *`
+      })
+
+      // Combinar todo en un solo marco
+      return [frame, ...framedNames, frame].join('\n')
+    }
+
+    console.log(createFrame(['midu', 'madeval', 'educalvolpz'])
+    )
+  </script>
+</body>
+
+</html>

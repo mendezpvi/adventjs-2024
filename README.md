@@ -11,4 +11,5 @@
 
 ***
 
-[![](./day-01/day-01.avif)](./day-01/README.md)
+| [![](./day-01/day-01.avif)](./day-01/README.md) | [![](./day-02/day-02.avif)](./day-02/README.md) |
+| --- | --- |
